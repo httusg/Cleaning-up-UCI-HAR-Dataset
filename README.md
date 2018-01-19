@@ -1,11 +1,4 @@
----
-title: "Cleaning up UCI HAR Dataset"
-output: 
-  html_document: 
-    fig_height: 4
-    highlight: pygments
-    theme: spacelab
----
+## Cleaning up UCI HAR Dataset
 
 ### Load packages
 Package **dplyr** provides helpful functions to manipulate data frames. 
