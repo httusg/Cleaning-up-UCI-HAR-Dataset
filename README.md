@@ -81,10 +81,10 @@ colnames(std_measurements)  = slist_clean
 
 **Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
 
-activity and subject are grouped together, and the average values of each group are calculated by the function **summarise_all**
+activity and subject are grouped together, and the average values of each measurement group are calculated by the function **summarise_all**
 
 ```{r}
-#subject (subject) - activity (y) - variables (mean_measurements, std_measurements)
+#subject (subject) - activity (y) - measurements (mean_measurements, std_measurements)
 activity <- y$activity
 SubActMeas <- cbind(subject, activity, mean_measurements, std_measurements)
 SubActAvg  <- SubActMeas %>% group_by(subID,activity) %>% summarise_all(mean)
