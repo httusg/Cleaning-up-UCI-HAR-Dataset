@@ -1,16 +1,16 @@
 ## Codebook for the measurement variables in the assignment
 
-The prefixes "t" and "f" of the variables imply the measurements in the time and frequency domains.
+The prefixes **t** and **f** of the variables imply the measurements in the time and frequency domains.
 
-The suffixes "X", "Y", or "Z" imply the measurements on each axis.
+The suffixes **X**, **Y**, or **Z** imply the measurements on each axis.
 
-The term "Mean" and "Std" in the variable names imply the mean and standard deviation of measurements.
+The term **Mean** and **Std** in the variable names imply the mean and standard deviation of measurements.
 
-The term "Body" and "Gravity" in the variable names imply the measurements of the body motion and grativity from the acceleration or gyroscope signals.
+The term **Body** and **Gravity** in the variable names imply the measurements of the body motion and grativity from the acceleration or gyroscope signals.
 
-The term "Acc" and "Gyro" in the variable names imply the measurements from either accelerometer or gyroscope respectively.
+The term **Acc** and **Gyro** in the variable names imply the measurements from either accelerometer or gyroscope respectively.
 
-The term "Jerk" in the variable names implies the signal derived from the body linear acceleration and angular velocity.
+The term **Jerk** in the variable names implies the signal derived from the body linear acceleration and angular velocity.
 
 There are several measurement variables which I cannot figure out the meaning.
 
