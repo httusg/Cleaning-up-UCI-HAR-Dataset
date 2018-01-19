@@ -64,3 +64,7 @@ colnames(std_measurements)  = slist_clean
 activity <- y$activity
 SubActMeas <- cbind(subject, activity, mean_measurements, std_measurements)
 SubActAvg  <- SubActMeas %>% group_by(subID,activity) %>% summarise_all(mean)
+
+                      
+# print the cleaning result to file
+#write.table(SubActAvg, "output.txt", append = FALSE, sep = " ", dec = ".", row.names = FALSE, col.names = TRUE)
