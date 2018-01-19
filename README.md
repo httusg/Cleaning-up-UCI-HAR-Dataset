@@ -34,7 +34,7 @@ y<-bind_rows(y_train, y_test)
 
 **Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.**
 
-The measurement variables are listed up in the file *features.txt*. The variables of the mean and standard deviation measurements have the terms *mean*,*Mean*, or *std* in the name. The indices of the variables in the file *features.txt* corresponds to the columns of the training dataset **X**, which need to be extracted.
+The measurement variables are listed up in the file *features.txt*. The variables of the mean and standard deviation measurements have the terms *mean*,*Mean* or *std* in the name. The indices of the variables in the file *features.txt* corresponds to the columns of the training dataset **X**, which need to be extracted.
 
 ```{r}
 features <- read.table("./features.txt")
@@ -46,7 +46,7 @@ std_measurements <- X %>% select(as.numeric(unlist(slist$V1)))
 
 **Step 3: Uses descriptive activity names to name the activities in the data set.**
 
-The activities are coded in the file *activity_labels.txt*. Adding a *description* column in the target dataset **y** makes it easier to read the data. The column name of the **subject** dataset should be changed to be meaningful also. 
+The activities are coded in the file *activity_labels.txt*. Adding a **description** column in the target dataset **y** makes it easier to read the data. The column name of the **subject** dataset should be changed to be meaningful also. 
 
 ```{r}
 activity_labels <- read.table("./activity_labels.txt")
